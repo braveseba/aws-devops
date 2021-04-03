@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: A simple EC2 instance
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0742b4e673072066f
+      InstanceType: t2.micro
+      KeyName: new_pair_apache
+      SecurityGroups: seba-cfdemo-sg
+       -
+      Tags:
+       -Key: Name
+        Value: seba-cf-instance
+      
+
+      
